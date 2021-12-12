@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+  <Parameters>
+    <Parameter name="bounds">-2.1753,52.6747,-0.8679,53.5811</Parameter>
+    <Parameter name="center">-1.4447,53.0891,8</Parameter>
+    <Parameter name="format"><![CDATA[png]]></Parameter>
+    <Parameter name="minzoom">0</Parameter>
+    <Parameter name="maxzoom">22</Parameter>
+    <Parameter name="scale">1</Parameter>
+    <Parameter name="metatile">2</Parameter>
+    <Parameter name="name"><![CDATA[Flooded Map]]></Parameter>
+    <Parameter name="description"><![CDATA[Use wetland value in an OpenStreetMap Carto AJT database to indicate currently flooded status.]]></Parameter>
+  </Parameters>
+  <Style filter-mode="first" name="flooded_line">
+    <Rule>
+      <MaxScaleDenominator>750</MaxScaleDenominator>
+      <LineSymbolizer stroke="#0080ff" stroke-width="10" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>2500</MaxScaleDenominator>
+      <MinScaleDenominator>750</MinScaleDenominator>
+      <LineSymbolizer stroke="#0080ff" stroke-width="8" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>12500</MaxScaleDenominator>
+      <MinScaleDenominator>2500</MinScaleDenominator>
+      <LineSymbolizer stroke="#0080ff" stroke-width="6" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>100000</MaxScaleDenominator>
+      <MinScaleDenominator>12500</MinScaleDenominator>
+      <LineSymbolizer stroke="#0080ff" stroke-width="4" />
+    </Rule>
+  </Style>
+  <Layer name="flooded_line" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName><![CDATA[flooded_line]]></StyleName>
+    <Datasource>
+      <Parameter name="type"><![CDATA[postgis]]></Parameter>
+      <Parameter name="table"><![CDATA[(select way from planet_osm_line where wetland='flooded') as flooded_line]]></Parameter>
+      <Parameter name="extent"><![CDATA[-20037508,-19929239,20037508,19929239]]></Parameter>
+      <Parameter name="key_field"><![CDATA[]]></Parameter>
+      <Parameter name="geometry_field"><![CDATA[way]]></Parameter>
+      <Parameter name="dbname"><![CDATA[gis]]></Parameter>
+    </Datasource>
+  </Layer>
+</Map>
+
