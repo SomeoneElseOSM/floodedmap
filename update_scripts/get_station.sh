@@ -2,9 +2,22 @@
 # get_station.sh $1
 # $1 is the station ID
 #
-# Initially just as a proof of concept this reads the station data every time.
-# There's no need to do that since it'd be easy to cache and the station data
-# doesn't change more often than every 15 minutes.
+# Once station data is read there's no need to re-read it within 15 minutes.
 # ------------------------------------------------------------------------------
-curl -s -o - https://check-for-flooding.service.gov.uk/station-csv/$1  | tail -1 | sed "s/.*,//"
+#
+if [ -e ~/data/ea_station_$1.txt ]
+then
+    if [  $(( (`date +%s` - `stat -L --format %Y ~/data/ea_station_$1.txt`) > (15*60) )) -gt 0 ]
+    then
+	#echo file exists and older
+	curl -s -o - https://check-for-flooding.service.gov.uk/station-csv/$1  | tail -1 | sed "s/.*,//" > ~/data/ea_station_$1.txt
+    #else
+	#echo file exists and not older
+    fi
+else
+    #echo file does not exist
+    curl -s -o - https://check-for-flooding.service.gov.uk/station-csv/$1  | tail -1 | sed "s/.*,//" > ~/data/ea_station_$1.txt
+fi
+#
+cat ~/data/ea_station_$1.txt
 #
