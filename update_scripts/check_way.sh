@@ -1,3 +1,4 @@
+#!/bin/bash
 # ------------------------------------------------------------------------------
 # check_way.sh
 #
@@ -6,11 +7,13 @@
 # $3 is the test height, in mm
 # (all are integers)
 #
-# ./get_station.sh is assumed to be local and uses ~/data to write cache files.
+# get_station.sh is assumed to be in the path and uses ~/data to write cache files.
 # ------------------------------------------------------------------------------
+cd /home/renderaccount/src/floodedmap/update_scripts
+export PATH=.:$PATH
 desired_station=$1
 test_height=$3
-current_heightm=`./get_station.sh $desired_station`
+current_heightm=`get_station.sh $desired_station`
 current_height=`bc <<< "scale=0; ${current_heightm} * 1000/1"`
 #bc <<< "scale=0; ${current_heightm} * 1000/1"
 #
