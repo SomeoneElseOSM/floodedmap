@@ -23,9 +23,11 @@ check_way.sh 8235 846071720  1500
 check_way.sh 8184 38355411   3650
 check_way.sh 8184 52024112   3650
 check_way.sh 8184 781159297  3650
-check_way.sh 8208 352872949  4000
-check_way.sh 8208 352872949  4000
-check_way.sh 8208 952184983  4000
-check_way.sh 8208 974445334  4000
-check_way.sh 8208 944914270  4000
+#check_way.sh 8208 352872949  4000
+#check_way.sh 8208 352872949  4000
+#check_way.sh 8208 952184983  4000
+#check_way.sh 8208 974445334  4000
+#check_way.sh 8208 944914270  4000
+#
+psql -d gis -c "SELECT osm_id FROM planet_osm_line WHERE (wetland = 'flooded');"
 #
