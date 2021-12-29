@@ -7,7 +7,8 @@
 cd /home/renderaccount/src/floodedmap/update_scripts
 export PATH=.:$PATH
 #
-check_way.sh 8235 753771968  1070
+check_way.sh 8235 753771968  1020
+check_way.sh 8235 1016543808 1070
 check_way.sh 8235 901961338  1220
 check_way.sh 8235 753771967  1400
 check_way.sh 8235 39327911   1430
