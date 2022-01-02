@@ -7,6 +7,10 @@
 cd /home/renderaccount/src/floodedmap/update_scripts
 export PATH=.:$PATH
 #
+# Remove existing tiles to avoid any caching
+rm -rf /var/lib/mod_tile/ajt4/??
+rm -rf /var/lib/mod_tile/ajt4/?
+#
 check_way.sh 8235 753771968  1020
 check_way.sh 8235 1016543808 1070
 check_way.sh 8235 901961338  1220
