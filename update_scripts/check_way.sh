@@ -15,7 +15,6 @@ desired_station=$1
 test_height=$3
 current_heightm=`get_station.sh $desired_station`
 current_height=`bc <<< "scale=0; ${current_heightm} * 1000/1"`
-#bc <<< "scale=0; ${current_heightm} * 1000/1"
 #
 #echo $current_height
 if [[ "$current_height" -lt "$test_height" ]]; then
