@@ -12,6 +12,42 @@
     <Parameter name="name"><![CDATA[Flooded Map]]></Parameter>
     <Parameter name="description"><![CDATA[Use wetland value in an OpenStreetMap Carto AJT database to indicate currently flooded status.]]></Parameter>
   </Parameters>
+  <Style filter-mode="first" name="flooded_area">
+    <Rule>
+      <MaxScaleDenominator>750</MaxScaleDenominator>
+      <PolygonSymbolizer fill="#b5d0d0" />
+      <LineSymbolizer stroke="#0080ff" stroke-opacity="0.329" stroke-width="2.5" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>2500</MaxScaleDenominator>
+      <MinScaleDenominator>750</MinScaleDenominator>
+      <PolygonSymbolizer fill="#b5d0d0" />
+      <LineSymbolizer stroke="#0080ff" stroke-opacity="0.329" stroke-width="2" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>12500</MaxScaleDenominator>
+      <MinScaleDenominator>2500</MinScaleDenominator>
+      <PolygonSymbolizer fill="#b5d0d0" />
+      <LineSymbolizer stroke="#0080ff" stroke-opacity="0.329" stroke-width="1.5" />
+    </Rule>
+    <Rule>
+      <MaxScaleDenominator>100000</MaxScaleDenominator>
+      <MinScaleDenominator>12500</MinScaleDenominator>
+      <PolygonSymbolizer fill="#b5d0d0" />
+      <LineSymbolizer stroke="#0080ff" stroke-opacity="0.329" stroke-width="1" />
+    </Rule>
+  </Style>
+  <Layer name="flooded_area" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName><![CDATA[flooded_area]]></StyleName>
+    <Datasource>
+      <Parameter name="type"><![CDATA[postgis]]></Parameter>
+      <Parameter name="table"><![CDATA[(select way from planet_osm_polygon where wetland='flooded') as flooded_area]]></Parameter>
+      <Parameter name="extent"><![CDATA[-20037508,-19929239,20037508,19929239]]></Parameter>
+      <Parameter name="key_field"><![CDATA[]]></Parameter>
+      <Parameter name="geometry_field"><![CDATA[way]]></Parameter>
+      <Parameter name="dbname"><![CDATA[gis]]></Parameter>
+    </Datasource>
+  </Layer>
   <Style filter-mode="first" name="flooded_line">
     <Rule>
       <MaxScaleDenominator>750</MaxScaleDenominator>
