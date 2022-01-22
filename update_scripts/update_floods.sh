@@ -42,8 +42,9 @@ check_way.sh 8235 846071720  1500 >> ~/data/ea_floods.justnow
 # Flooding due to the Ouse et al upstream of Skelton
 # https://check-for-flooding.service.gov.uk/station/8184
 #
-# Note that rain upstream of 486955585 can also cause flooding
-# on way 781159297 etc., but there are no gauges there.
+# Note that rain upstream of way 486955585 can also cause 
+# flooding on way 781159297 etc., but there are no gauges
+# there.
 #
 check_way.sh 8184 38355411   3410 >> ~/data/ea_floods.justnow
 check_way.sh 8184 52024112   3390 >> ~/data/ea_floods.justnow
@@ -65,6 +66,11 @@ check_area.sh 8184 1019781838 3160 >> ~/data/ea_floods.justnow
 check_area.sh 8184 1019785868 3160 >> ~/data/ea_floods.justnow
 check_area.sh 8184 1019781961 3160 >> ~/data/ea_floods.justnow
 check_area.sh 8184 925754920  3650 >> ~/data/ea_floods.justnow
+#
+# Flooding due to the Ouse downstream of Clifton Ings Outfall
+# https://check-for-flooding.service.gov.uk/station/9347
+#
+check_way.sh 9347 133317875 6050 >> ~/data/ea_floods.justnow
 #
 # Potential flooding downstream of Viking Recorder
 # https://check-for-flooding.service.gov.uk/station/8208
