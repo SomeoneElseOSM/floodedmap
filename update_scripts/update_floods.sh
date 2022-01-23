@@ -62,10 +62,11 @@ check_way.sh 8184 1019783358 4650 >> ~/data/ea_floods.justnow
 check_way.sh 8184 1019784225 4160 >> ~/data/ea_floods.justnow
 check_way.sh 8184 1019784980 2960 >> ~/data/ea_floods.justnow
 #
+check_area.sh 8184 1023804545 2460 >> ~/data/ea_floods.justnow
 check_area.sh 8184 1019781838 3160 >> ~/data/ea_floods.justnow
 check_area.sh 8184 1019785868 3160 >> ~/data/ea_floods.justnow
 check_area.sh 8184 1019781961 3160 >> ~/data/ea_floods.justnow
-check_area.sh 8184 925754920  3650 >> ~/data/ea_floods.justnow
+check_area.sh 8184 1023804544 3650 >> ~/data/ea_floods.justnow
 #
 # Flooding due to the Ouse downstream of Clifton Ings Outfall
 # https://check-for-flooding.service.gov.uk/station/9347
