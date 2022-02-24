@@ -41,7 +41,8 @@ check_way.sh 8235 252151956  2600 ${local_filesystem_user} ${local_renderd_user}
 check_way.sh 8235 901963208  2700 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8235 37535250   2700 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8235 901962646  2500 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
-check_way.sh 8235 846071720  1500 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8235 846071720  1360 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8235 1033663114 1350 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 #
 # Flooding due to the Ouse et al upstream of Skelton
 # https://check-for-flooding.service.gov.uk/station/8184
