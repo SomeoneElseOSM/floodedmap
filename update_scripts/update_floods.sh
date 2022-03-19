@@ -105,12 +105,13 @@ check_area.sh 8184 1035238702 4010 ${local_filesystem_user} ${local_renderd_user
 #
 # Flooding due to the Ouse downstream of Clifton Ings Outfall
 # https://check-for-flooding.service.gov.uk/station/9347
+# n/a
 #
-check_way.sh 9347 133317875 6050 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
-#
-# Potential flooding downstream of Viking Recorder
+# Potential flooding downstream and just upstream of Viking Recorder
 # https://check-for-flooding.service.gov.uk/station/8208
 #
+check_way.sh 8208 133317875 0740 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8208 1041669749 0790 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8208 352872949  4000 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8208 952184983  4000 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8208 974445334  4000 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
