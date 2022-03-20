@@ -20,7 +20,7 @@ current_heightm=`get_station.sh $desired_station ${local_filesystem_user} ${loca
 current_height=`bc <<< "scale=0; ${current_heightm} * 1000/1"`
 #
 #echo $current_height
-if [[ "$current_height" -lt "$test_height" ]]; then
+if [[ "10#$current_height" -lt "10#$test_height" ]]; then
     #echo "current height is less"
     sudo -u ${local_renderd_user} psql -d gis -c "UPDATE planet_osm_polygon SET wetland = 'not_flooded' WHERE osm_id = '$2';"
 else
