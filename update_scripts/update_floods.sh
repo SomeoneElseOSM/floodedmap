@@ -123,6 +123,7 @@ check_way.sh 8208 1034924719 3230 ${local_filesystem_user} ${local_renderd_user}
 check_area.sh 8208 281131445 3530 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_area.sh 8208 1034925077 3230 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_area.sh 8208 1034925321 3230 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_area.sh 8208 1064721928 3230 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 #
 echo " " >> /home/${local_filesystem_user}/data/ea_floods.justnow
 echo "Flooded:" >> /home/${local_filesystem_user}/data/ea_floods.justnow
