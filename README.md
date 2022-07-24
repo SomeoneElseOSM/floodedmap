@@ -36,5 +36,6 @@ Because the style is _only_ an overlay - no background land polygons or water
 polygons are displayed, there's no need to make those transparent.
 
 ## Setting "flooded" status
-This hasn't been done yet, but it is planned to do this automatically and 
-periodically based on "check-for-flooding.service.gov.uk"'s OGL3 data.
+The "update_floods.sh" script does this.  That calls "check_way.sh" and  
+"check_area.sh" several times, which use "get_station.sh" to get 
+"check-for-flooding.service.gov.uk"'s OGL3 data.
