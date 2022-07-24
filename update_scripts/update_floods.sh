@@ -16,13 +16,15 @@
 local_filesystem_user=renderaccount
 local_renderd_user=renderaccount
 #local_renderd_user=_renderd
+tile_path=/var/lib/mod_tile
+#tile_path=/var/cache/renderd/tiles
 #
 cd /home/${local_filesystem_user}/src/floodedmap/update_scripts
 export PATH=.:$PATH
 #
 # Remove existing tiles to avoid any caching
-rm -rf /var/lib/mod_tile/ajt4/??
-rm -rf /var/lib/mod_tile/ajt4/?
+rm -rf ${tile_path}/ajt4/??
+rm -rf ${tile_path}/ajt4/?
 mv /home/${local_filesystem_user}/data/ea_floods.justnow /home/${local_filesystem_user}/data/ea_floods.previously
 #
 # Flooding due to the Foss upstream of Huntington
