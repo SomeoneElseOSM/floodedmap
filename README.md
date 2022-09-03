@@ -33,7 +33,9 @@ there's no z_order processing isn't a problem.  The colour used is designed to
 "look like water, but not be mistakable for the normal water colour".
 
 Because the style is _only_ an overlay - no background land polygons or water 
-polygons are displayed, there's no need to make those transparent.
+polygons are displayed, and no background such as 
+https://github.com/SomeoneElseOSM/openstreetmap-carto-AJT/blob/master/style.mss#L2 
+is set, there's no need to make anything transparent.
 
 ## Setting "flooded" status
 The "update_floods.sh" script does this.  That calls "check_way.sh" and  
