@@ -13,11 +13,9 @@
 # The difference between the output from the last run and the current one is
 # written to stdout (and if run from cron, mailed).
 # ------------------------------------------------------------------------------
-local_filesystem_user=renderaccount
-local_renderd_user=renderaccount
-#local_renderd_user=_renderd
-tile_path=/var/lib/mod_tile
-#tile_path=/var/cache/renderd/tiles
+local_filesystem_user=ajtown
+local_renderd_user=_renderd
+tile_path=/var/cache/renderd/tiles
 #
 cd /home/${local_filesystem_user}/src/floodedmap/update_scripts
 export PATH=.:$PATH
