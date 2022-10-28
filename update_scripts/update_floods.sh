@@ -49,7 +49,7 @@ check_way.sh 8235 901962646  2500 ${local_filesystem_user} ${local_renderd_user}
 check_way.sh 8235 846071720  1360 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8235 1033663114 1350 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8235 65617003 1880 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
-check_way.sh 8235 1077540262 810 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8235 1077540262 740 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 #
 check_area.sh 8235 1034923243 1880 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 #
@@ -139,5 +139,5 @@ echo " " >> /home/${local_filesystem_user}/data/ea_floods.justnow
 echo "Not Flooded:" >> /home/${local_filesystem_user}/data/ea_floods.justnow
 sudo -u ${local_renderd_user} psql -d gis -c "SELECT osm_id FROM planet_osm_line WHERE (wetland = 'not_flooded');" | grep rows >> /home/${local_filesystem_user}/data/ea_floods.justnow
 #
-diff /home/${local_filesystem_user}/data/ea_floods.justnow /home/${local_filesystem_user}/data/ea_floods.previously
+diff /home/${local_filesystem_user}/data/ea_floods.previously /home/${local_filesystem_user}/data/ea_floods.justnow
 #
