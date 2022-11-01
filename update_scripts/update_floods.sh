@@ -25,6 +25,12 @@ rm -rf ${tile_path}/ajt4/??
 rm -rf ${tile_path}/ajt4/?
 mv /home/${local_filesystem_user}/data/ea_floods.justnow /home/${local_filesystem_user}/data/ea_floods.previously
 #
+# Foss at West Lilling
+# https://check-for-flooding.service.gov.uk/station/9305
+# n/a because works at https://www.openstreetmap.org/way/1080982495
+# (see https://consult.environment-agency.gov.uk/yorkshire/yorkfas/#fact-bank-11 )
+# mean that West Lilling is no longer a predictor of levels downstream of Strensall
+#
 # Flooding due to the Foss upstream of Huntington
 # https://check-for-flooding.service.gov.uk/station/8235
 #
