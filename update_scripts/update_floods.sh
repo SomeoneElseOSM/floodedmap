@@ -1,5 +1,5 @@
 #!/bin/bash
-# ------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 # update_floods.sh
 #
 # Designed to be run from cron as the owner of the database so that the
@@ -12,7 +12,7 @@
 #
 # The difference between the output from the last run and the current one is
 # written to stdout (and if run from cron, mailed).
-# ------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 local_filesystem_user=ajtown
 local_renderd_user=_renderd
 tile_path=/var/cache/renderd/tiles
@@ -29,7 +29,8 @@ mv /home/${local_filesystem_user}/data/ea_floods.justnow /home/${local_filesyste
 # https://check-for-flooding.service.gov.uk/station/9305
 # n/a because works at https://www.openstreetmap.org/way/1080982495
 # (see https://consult.environment-agency.gov.uk/yorkshire/yorkfas/#fact-bank-11 )
-# mean that West Lilling is no longer a predictor of levels downstream of Strensall
+# mean that West Lilling is no longer a predictor of levels downstream of
+# Strensall
 #
 # Flooding due to the Foss upstream of Huntington
 # https://check-for-flooding.service.gov.uk/station/8235
@@ -52,7 +53,7 @@ check_way.sh 8235 37535250   2700 ${local_filesystem_user} ${local_renderd_user}
 check_way.sh 8235 906946127  1360 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8235 1106968082 1360 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8235 901962646  2500 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
-check_way.sh 8235 846071720  1360 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8235 846071720  1000 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8235 1033663114 1350 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8235 65617003 1880 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8235 1077540262 740 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
