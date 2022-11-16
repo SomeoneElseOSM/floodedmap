@@ -140,7 +140,7 @@ check_area.sh 8208 1064721928 3230 ${local_filesystem_user} ${local_renderd_user
 #
 echo " " >> /home/${local_filesystem_user}/data/ea_floods.justnow
 echo "Flooded:" >> /home/${local_filesystem_user}/data/ea_floods.justnow
-sudo -u ${local_renderd_user} psql -d gis -c "SELECT osm_id FROM planet_osm_line WHERE (wetland = 'flooded');" | sort >> /home/${local_filesystem_user}/data/ea_floods.justnow
+sudo -u ${local_renderd_user} psql -d gis -c '\pset format csv' -c "SELECT osm_id FROM planet_osm_line WHERE (wetland = 'flooded');" | sort | sed "s/^/http:\/\/osm.org\/way\//" >> /home/${local_filesystem_user}/data/ea_floods.justnow
 #
 echo " " >> /home/${local_filesystem_user}/data/ea_floods.justnow
 echo "Not Flooded:" >> /home/${local_filesystem_user}/data/ea_floods.justnow
