@@ -10,7 +10,7 @@ An example is https://www.openstreetmap.org/way/37535250 .  Currently the data
 is just in scripts here, and in OSM as note tags rather than machine-readable data in OSM.  
 If a path is flooded, it looks like this:
 
-![screenshot](https://raw.github.com/SomeoneElseOSM/floodedmap/files/Screenshot_20221210_232709.png)
+![screenshot](https://raw.githubusercontent.com/SomeoneElseOSM/floodedmap/main/files/Screenshot_20221210_232709.png)
 
 In addition to paths, water areas that flood at predictable river levels are also shown.
 
