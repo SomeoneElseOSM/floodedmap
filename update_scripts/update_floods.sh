@@ -35,8 +35,8 @@ mv /home/${local_filesystem_user}/data/ea_floods.justnow /home/${local_filesyste
 # Flooding due to the Foss upstream of Huntington
 # https://check-for-flooding.service.gov.uk/station/8235
 #
-check_way.sh 8235 753771968  1120 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
-check_way.sh 8235 1016543808 1070 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8235 753771968  1180 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8235 1016543808 1170 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8235 1077540263 1070 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8235 901961338  1410 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8235 1077540264 1410 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
