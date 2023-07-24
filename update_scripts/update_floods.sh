@@ -37,9 +37,9 @@ mv /home/${local_filesystem_user}/data/ea_floods.justnow /home/${local_filesyste
 #
 check_way.sh 8235 753771968  1180 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8235 1016543808 1170 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
-check_way.sh 8235 1077540263 1070 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+# check_way.sh 8235 1077540263 1070 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8235 901961338  1410 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
-check_way.sh 8235 1077540264 1320 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+# check_way.sh 8235 1077540264 1320 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8235 753771967  1450 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8235 39327911   1430 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8235 1106719736 1430 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
@@ -62,7 +62,7 @@ check_way.sh 8235 846071720  1140 ${local_filesystem_user} ${local_renderd_user}
 check_way.sh 8235 875859840  1140 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8235 1033663114 1850 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8235 65617003 1880 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
-check_way.sh 8235 1077540262 740 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+# check_way.sh 8235 1077540262 740 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 #
 check_area.sh 8235 1034923243 1880 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 #
