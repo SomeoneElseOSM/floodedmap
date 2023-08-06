@@ -2,10 +2,10 @@
 # -----------------------------------------------------------------------------
 # update_floods.sh
 #
-# Designed to be run from cron as the owner of the database so that the
-# "psql" commands work.  It assumes that cached EA flood information is in
-# ~/data , so it isn't currently compatible with Debian 11 / Ubuntu 21.04
-# and above, where the psql user and filesystem owner will be different.
+# Designed to be run from cron as root.  It runs as the owner of the database
+# for updates, so that the "psql" commands work.
+# It assumes that cached EA flood information is in "data" below a named
+# filesystem user declared below.
 #
 # Database assumed to be "gis".
 # Tile style used for floods assumed to be "ajt4".
