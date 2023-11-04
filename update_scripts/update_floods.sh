@@ -50,7 +50,7 @@ check_way.sh 8235 1011560260 1840 ${local_filesystem_user} ${local_renderd_user}
 check_way.sh 8235 1117270803 1830 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8235 1106719511 1930 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8235 252151956  2120 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
-check_way.sh 8235 901963208  2700 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8235 901963208  1840 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8235 1106968774 1930 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8235 901962648  2700 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8235 1106968773 2700 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
@@ -75,12 +75,19 @@ check_way.sh 8235 601815220 1930 ${local_filesystem_user} ${local_renderd_user} 
 check_way.sh 8235 1219375393 1930 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8235 1219375715 1930 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8235 259451478 1990 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8235 1221115478 2470 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8235 906943563 1840 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8235 37535246 1860 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8235 1119247731 1840 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8235 1221119006 1840 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 #
 check_area.sh 8235 1034923243 1880 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
-check_area.sh 8235 1219373461 1880 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_area.sh 8235 1219373461 1840 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_area.sh 8235 1219375347 1880 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_area.sh 8235 1219376342 1960 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_area.sh 8235 1219377846 1990 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_area.sh 8235 919942781 2470 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_area.sh 8235 1037812618 1840 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 #
 # Flooding due to the Ouse et al upstream of Skelton
 # https://check-for-flooding.service.gov.uk/station/8184
