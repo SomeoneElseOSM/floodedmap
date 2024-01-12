@@ -187,6 +187,13 @@ check_area.sh 8208 1034925077 3230 ${local_filesystem_user} ${local_renderd_user
 check_area.sh 8208 1034925321 3230 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_area.sh 8208 1064721928 3230 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 #
+#
+# Potential flooding on the Derwent just upstream of Stamford Bridge
+# https://check-for-flooding.service.gov.uk/station/8280
+#
+check_way.sh 8280 1238985279 8780 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8280 1238998434 8780 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+#
 echo " " >> /home/${local_filesystem_user}/data/ea_floods.justnow
 echo "Flooded:" >> /home/${local_filesystem_user}/data/ea_floods.justnow
 sudo -u ${local_renderd_user} psql -d gis -c '\pset format csv' -c "SELECT osm_id FROM planet_osm_line WHERE (wetland = 'flooded');" | sort | sed "s/^/http:\/\/osm.org\/way\//" >> /home/${local_filesystem_user}/data/ea_floods.justnow
