@@ -24,6 +24,7 @@ export PATH=.:$PATH
 rm -rf ${tile_path}/ajt4/??
 rm -rf ${tile_path}/ajt4/?
 mv /home/${local_filesystem_user}/data/ea_floods.justnow /home/${local_filesystem_user}/data/ea_floods.previously
+
 #
 # Foss at West Lilling
 # https://check-for-flooding.service.gov.uk/station/9305
@@ -31,6 +32,7 @@ mv /home/${local_filesystem_user}/data/ea_floods.justnow /home/${local_filesyste
 # (see https://consult.environment-agency.gov.uk/yorkshire/yorkfas/#fact-bank-11 )
 # mean that West Lilling is no longer a predictor of levels downstream of
 # Strensall
+
 #
 # Flooding due to the Foss upstream of Huntington
 # https://check-for-flooding.service.gov.uk/station/8235
@@ -90,6 +92,9 @@ check_way.sh 8235 906946793  1200 ${local_filesystem_user} ${local_renderd_user}
 check_way.sh 8235 906944629  1430 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8235 1230708125 2370 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8235 1233932702 2000 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8235 1349881137 2410 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8235 1349881243 2380 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8235 753771970  2380 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 #
 check_area.sh 8235 1034923243 1880 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_area.sh 8235 1219373461 1840 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
@@ -100,6 +105,7 @@ check_area.sh 8235 919942781 2470 ${local_filesystem_user} ${local_renderd_user}
 check_area.sh 8235 1037812618 1840 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_area.sh 8235 1224871538 2360 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_area.sh 8235 1224877592 2240 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+
 #
 # Flooding due to the Ouse et al upstream of Skelton
 # https://check-for-flooding.service.gov.uk/station/8184
@@ -140,8 +146,25 @@ check_way.sh 8184 1035236781 6030 ${local_filesystem_user} ${local_renderd_user}
 check_way.sh 8184 1208140413 6030 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8184 925758087 4010 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8184 1035236428 6000 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
-check_way.sh 8184 71442018 6030 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
-check_way.sh 8184 781159290 6030 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8184 71442018   6030 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8184 781159290  6030 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8184 976483582  5340 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8184 450095808  5340 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8184 23318099   5340 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8184 1349878350 5340 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8184 1349878460 5340 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8184 1069834703 5340 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8184 1202570709 5340 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8184 1349878918 5340 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8184 1349878998 5340 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8184 152631107  5340 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8184 152631111  5340 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8184 22887908   5340 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8184 976483580  5340 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8184 976483579  5340 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8184 976483578  5340 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8184 976483577  5340 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8184 872042470  5340 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 #
 check_area.sh 8184 1023804545 2460 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_area.sh 8184 1019781838 3160 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
@@ -163,10 +186,13 @@ check_area.sh 8184 1130122698 4070 ${local_filesystem_user} ${local_renderd_user
 check_area.sh 8184 1130131919 4070 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_area.sh 8184 1021729709 4070 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_area.sh 8184 1130161427 4070 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_area.sh 8184 1349877382 5340 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+
 #
 # Flooding due to the Ouse downstream of Clifton Ings Outfall
 # https://check-for-flooding.service.gov.uk/station/9347
 # n/a
+
 #
 # Potential flooding downstream and just upstream of Viking Recorder
 # https://check-for-flooding.service.gov.uk/station/8208
@@ -205,6 +231,7 @@ check_way.sh 8208 944914270  4000 ${local_filesystem_user} ${local_renderd_user}
 check_way.sh 8208 952184983  4000 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8208 974445334  4000 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8208 4486181    3840 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
+check_way.sh 8208 54992809   3840 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8208 25950306   3840 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8208 1020646883 3840 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8208 1348390886 3840 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
@@ -213,13 +240,12 @@ check_way.sh 8208 151610538  3840 ${local_filesystem_user} ${local_renderd_user}
 check_way.sh 8208 151610522  3840 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8208 151610535  3840 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8208 151610533  3840 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
-
 #
 check_area.sh 8208 281131445  3530 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_area.sh 8208 1034925077 3230 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_area.sh 8208 1034925321 3230 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_area.sh 8208 1064721928 3230 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
-#
+
 #
 # Potential flooding on the Derwent just upstream of Stamford Bridge
 # https://check-for-flooding.service.gov.uk/station/8280
@@ -227,6 +253,7 @@ check_area.sh 8208 1064721928 3230 ${local_filesystem_user} ${local_renderd_user
 check_way.sh 8280 1238985279 8780 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 check_way.sh 8280 1238998434 8780 ${local_filesystem_user} ${local_renderd_user} >> /home/${local_filesystem_user}/data/ea_floods.justnow
 #
+
 echo " " >> /home/${local_filesystem_user}/data/ea_floods.justnow
 echo "Flooded:" >> /home/${local_filesystem_user}/data/ea_floods.justnow
 sudo -u ${local_renderd_user} psql -d gis -c '\pset format csv' -c "SELECT osm_id FROM planet_osm_line WHERE (wetland = 'flooded');" | sort | sed "s/^/http:\/\/osm.org\/way\//" >> /home/${local_filesystem_user}/data/ea_floods.justnow
